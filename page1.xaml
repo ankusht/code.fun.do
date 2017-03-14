@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="Hangman.page1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Hangman"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        
+
+        <StackPanel Margin="0,-16,0,16">
+            <TextBlock HorizontalAlignment="Center" Text="Enter your name"/>
+            <TextBox HorizontalAlignment="Center" Width="200" Name="name"/>
+            <Button x:Name="button" Content="Start the game" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="80,0" Click="button_Click" RenderTransformOrigin="0.48,1.125"
+                     >
+                <Button.Transitions>
+                    <TransitionCollection>
+                        <EntranceThemeTransition/>
+                    </TransitionCollection>
+                </Button.Transitions>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Page>
